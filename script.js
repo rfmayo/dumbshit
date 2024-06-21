@@ -1,26 +1,25 @@
-// Sample items list
 const items = [
-    { id: 1, img: 'images/amelia-bullmore.png', desc: 'Amelia Bullmore' },
-    { id: 2, img: 'images/catherine-tate.jpg', desc: 'Catherine Tate' },
-    { id: 3, img: 'images/julia-davis.jpg', desc: 'Julia Davis' },
-    { id: 4, img: 'images/kevin-eldon.jpg', desc: 'Kevin Eldon' },
-    { id: 5, img: 'images/mark-heap.jpg', desc: 'Mark Heap' },
-    { id: 6, img: 'images/nick-frost.jpg', desc: 'Nick Frost' },
-    { id: 7, img: 'images/phil-cornwell.jpg', desc: 'Phil Cornwell' },
-    { id: 8, img: 'images/rebecca-front.jpg', desc: 'Rebecca Front' },
-    { id: 9, img: 'tracy-ann-oberman.jpg', desc: 'Tracy-Ann Oberman' },
+    { id: 1, img: 'images/amelia-bullmore.png', desc: 'Amelia Bullmore', votes: 0 },
+    { id: 2, img: 'images/catherine-tate.jpg', desc: 'Catherine Tate', votes: 0 },
+    { id: 3, img: 'images/david-schneider.jpeg', desc: 'David Schneider', votes: 0 },
+    { id: 4, img: 'images/doon-mackichan.jpg', desc: 'Doon Mackichan', votes: 0 },
+    { id: 5, img: 'images/julia-davis.jpg', desc: 'Julia Davis', votes: 0 },
+    { id: 6, img: 'images/kevin-eldon.jpg', desc: 'Kevin Eldon', votes: 0 },
+    { id: 7, img: 'images/mark-heap.jpg', desc: 'Mark Heap', votes: 0 },
+    { id: 8, img: 'images/nick-frost.jpg', desc: 'Nick Frost', votes: 0 },
+    { id: 9, img: 'images/phil-cornwell.jpg', desc: 'Phil Cornwell', votes: 0 },
+    { id: 10, img: 'images/rebecca-front.jpg', desc: 'Rebecca Front', votes: 0 },
+    { id: 11, img: 'images/tracy-ann-oberman.jpg', desc: 'Tracy-Ann Oberman', votes: 0 },
     // Add more items here
 ];
 
 let currentPair = [];
 
-// Function to get two random items
 function getRandomPair() {
     const shuffled = items.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 2);
 }
 
-// Function to display items
 function displayItems() {
     currentPair = getRandomPair();
     document.getElementById('img1').src = currentPair[0].img;
@@ -29,13 +28,29 @@ function displayItems() {
     document.getElementById('desc2').textContent = currentPair[1].desc;
 }
 
-// Function to handle voting
 function vote(itemNumber) {
-    const winner = currentPair[itemNumber - 1];
-    // Store or process the vote, then refresh the items
-    console.log('Voted for:', winner);
+    currentPair[itemNumber - 1].votes++;
     displayItems();
+    displayRankings();
+}
+
+function displayRankings() {
+    // Sort items by votes
+    const sortedItems = [...items].sort((a, b) => b.votes - a.votes);
+
+    // Create HTML for rankings
+    let rankingsHTML = '<h2>Rankings</h2><ol>';
+    sortedItems.forEach(item => {
+        rankingsHTML += `<li>${item.desc} - ${item.votes} votes</li>`;
+    });
+    rankingsHTML += '</ol>';
+
+    // Update the rankings div
+    document.getElementById('rankings').innerHTML = rankingsHTML;
 }
 
 // Initialize the display
-window.onload = displayItems;
+window.onload = function() {
+    displayItems();
+    displayRankings();
+};
