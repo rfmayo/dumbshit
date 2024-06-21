@@ -1,7 +1,14 @@
 // Sample items list
 const items = [
-    { id: 1, img: 'img1.jpg', desc: 'Item 1 Description' },
-    { id: 2, img: 'img2.jpg', desc: 'Item 2 Description' },
+    { id: 1, img: 'images/amelia-bullmore.png', desc: 'Amelia Bullmore' },
+    { id: 2, img: 'images/catherine-tate.jpg', desc: 'Catherine Tate' },
+    { id: 3, img: 'images/julia-davis.jpg', desc: 'Julia Davis' },
+    { id: 4, img: 'images/kevin-eldon.jpg', desc: 'Kevin Eldon' },
+    { id: 5, img: 'images/mark-heap.jpg', desc: 'Mark Heap' },
+    { id: 6, img: 'images/nick-frost.jpg', desc: 'Nick Frost' },
+    { id: 7, img: 'images/phil-cornwell.jpg', desc: 'Phil Cornwell' },
+    { id: 8, img: 'images/rebecca-front.jpg', desc: 'Rebecca Front' },
+    { id: 9, img: 'tracy-ann-oberman.jpg', desc: 'Tracy-Ann Oberman' },
     // Add more items here
 ];
 
