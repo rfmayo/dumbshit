@@ -3,6 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: 100vh;
     background-color: #f0f0f0;
 }
@@ -19,4 +20,7 @@ body {
     height: auto;
     display: block;
     margin: 0 auto;
+}
+#rankings {
+    margin-top: 20px;
 }
