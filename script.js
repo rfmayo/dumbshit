@@ -9,7 +9,7 @@ const items = [
     { id: 8, img: 'images/nick-frost.jpg', desc: 'Nick Frost', votes: 0 },
     { id: 9, img: 'images/phil-cornwell.jpg', desc: 'Phil Cornwell', votes: 0 },
     { id: 10, img: 'images/rebecca-front.jpg', desc: 'Rebecca Front', votes: 0 },
-    { id: 11, img: 'images/tracyann-oberman.jpg', desc: 'Tracy-Ann Oberman', votes: 0 },
+    { id: 11, img: 'images/tracy-ann-oberman.jpg', desc: 'Tracy-Ann Oberman', votes: 0 },
     // Add more items here
 ];
 
