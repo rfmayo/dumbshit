@@ -35,21 +35,15 @@ function vote(itemNumber) {
 }
 
 function displayRankings() {
-    // Sort items by votes
     const sortedItems = [...items].sort((a, b) => b.votes - a.votes);
-
-    // Create HTML for rankings
     let rankingsHTML = '<h2>Rankings</h2><ol>';
     sortedItems.forEach(item => {
         rankingsHTML += `<li>${item.desc} - ${item.votes} votes</li>`;
     });
     rankingsHTML += '</ol>';
-
-    // Update the rankings div
     document.getElementById('rankings').innerHTML = rankingsHTML;
 }
 
-// Initialize the display
 window.onload = function() {
     displayItems();
     displayRankings();
