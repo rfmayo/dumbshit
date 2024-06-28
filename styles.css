@@ -21,6 +21,24 @@ body {
     display: block;
     margin: 0 auto;
 }
-#rankings {
+#top-rankings {
     margin-top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.top-items {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.top-item {
+    text-align: center;
+    width: 18%;
+}
+.top-item img {
+    max-width: 100px;
+    height: auto;
 }
