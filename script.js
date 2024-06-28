@@ -1,7 +1,7 @@
 const items = [
     { id: 1, img: 'images/abi-clarke.png', desc: 'Abi Clarke', votes: 0 },
     { id: 2, img: 'images/adam-bloom.png', desc: 'Adam Bloom', votes: 0 },
-    { id: 3, img: 'images/adam-buxton-.png', desc: 'Adam Buxton ', votes: 0 },
+    { id: 3, img: 'images/adam-buxton.png', desc: 'Adam Buxton ', votes: 0 },
     { id: 4, img: 'images/adam-hills.png', desc: 'Adam Hills', votes: 0 },
     { id: 5, img: 'images/adam-kay.png', desc: 'Adam Kay', votes: 0 },
     { id: 6, img: 'images/adam-riches.png', desc: 'Adam Riches', votes: 0 },
