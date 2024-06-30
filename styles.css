@@ -21,6 +21,9 @@ body {
     display: block;
     margin: 0 auto;
 }
+.item button {
+    margin: 5px;
+}
 #top-rankings {
     margin-top: 20px;
     width: 100%;
