@@ -1,6 +1,6 @@
 const items = [
-    { id: 1, img: 'images/img1.jpg', desc: "Item 1's Description", votes: 0, dismissed: false },
-    { id: 2, img: 'images/img2.jpg', desc: "Item 2's Description", votes: 0, dismissed: false },
+    { id: 1, img: 'images/img1.jpg', desc: "Item 1's Description", votes: 0, dismissed: false, voted: false },
+    { id: 2, img: 'images/img2.jpg', desc: "Item 2's Description", votes: 0, dismissed: false, voted: false },
     // Add more items here
 ];
 
@@ -8,7 +8,17 @@ let currentPair = [];
 
 // Function to get a new random item that is not dismissed and not in the current pair
 function getNewItem(excludeItemId) {
-    const availableItems = items.filter(item => !item.dismissed && item.id !== excludeItemId);
+    // Filter out dismissed items and the item to exclude
+    let availableItems = items.filter(item => !item.dismissed && item.id !== excludeItemId);
+
+    // First, try to find an item that has not been voted on
+    let prioritizedItems = availableItems.filter(item => !item.voted);
+    
+    // If no such item is found, fall back to any available item
+    if (prioritizedItems.length > 0) {
+        availableItems = prioritizedItems;
+    }
+
     const randomIndex = Math.floor(Math.random() * availableItems.length);
     return availableItems[randomIndex];
 }
@@ -39,13 +49,24 @@ function displayItems(replaceItemIndex = null) {
 }
 
 function getRandomPair() {
-    const availableItems = items.filter(item => !item.dismissed);
+    let availableItems = items.filter(item => !item.dismissed);
+
+    // First, try to find a pair of items that have not been voted on
+    let prioritizedItems = availableItems.filter(item => !item.voted);
+    
+    // If fewer than 2 items are found, fall back to any available items
+    if (prioritizedItems.length >= 2) {
+        availableItems = prioritizedItems;
+    }
+
     const shuffled = availableItems.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, 2);
 }
 
 function vote(itemNumber) {
     currentPair[itemNumber - 1].votes++;
+    currentPair[itemNumber - 1].voted = true;
+    currentPair[1 - itemNumber].voted = true; // Mark the other item as voted as well
     displayItems();
     displayRankings();
 }
