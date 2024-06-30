@@ -23,6 +23,14 @@ function getNewItem(excludeItemId) {
     return availableItems[randomIndex];
 }
 
+//Function to find out more about an item using Google search
+function findOutMore(itemNumber) {
+    const item = currentPair[itemNumber - 1];
+    const query = encodeURIComponent(`${item.desc} comedian`);
+    const url = `https://www.google.com/search?q=${query}`;
+    window.open(url, '_blank');
+}
+
 // Function to display items, with optional replacement of a specific item
 function displayItems(replaceItemIndex = null) {
     if (replaceItemIndex !== null) {
