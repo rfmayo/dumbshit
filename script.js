@@ -122,36 +122,136 @@ const items = [
 { id: 121, img: 'images/julia-zemiro.png', desc: "Julia Zemiro", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
 { id: 122, img: 'images/julian-barratt.png', desc: "Julian Barratt", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
 { id: 123, img: 'images/justin-moorhouse.png', desc: "Justin Moorhouse", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
-    // Add more items here
+{ id: 124, img: 'images/karen-taylor.png', desc: "Karen Taylor", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 125, img: 'images/karl-theobald.png', desc: "Karl Theobald", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 126, img: 'images/katherine-jakeways.png', desc: "Katherine Jakeways", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 127, img: 'images/kathy-burke.png', desc: "Kathy Burke", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 128, img: 'images/katy-brand.png', desc: "Katy Brand", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 129, img: 'images/kayvan-novak.png', desc: "Kayvan Novak", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 130, img: 'images/kemah-bob.png', desc: "Kemah Bob", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'bame' },
+{ id: 131, img: 'images/kevin-bridges.png', desc: "Kevin Bridges", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 132, img: 'images/kevin-eldon.png', desc: "Kevin Eldon", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 133, img: 'images/kiri-pritchard-mclean.png', desc: "Kiri Pritchard-McLean", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 134, img: 'images/kulvinder-ghir.png', desc: "Kulvinder Ghir", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 135, img: 'images/lara-ricote.png', desc: "Lara Ricote", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 136, img: 'images/laura-lexx.png', desc: "Laura Lexx", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 137, img: 'images/laura-smyth.png', desc: "Laura Smyth", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 138, img: 'images/laurence-rickard.png', desc: "Laurence Rickard", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 139, img: 'images/lindsey-santoro.png', desc: "Lindsey Santoro", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 140, img: 'images/lloyd-langford.png', desc: "Lloyd Langford", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 141, img: 'images/london-hughes.png', desc: "London Hughes", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 142, img: 'images/louise-young.png', desc: "Louise Young", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'bame' },
+{ id: 143, img: 'images/loyiso-gola.png', desc: "Loyiso Gola", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 144, img: 'images/lucy-montgomery.png', desc: "Lucy Montgomery", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 145, img: 'images/lucy-pearman.png', desc: "Lucy Pearman", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 146, img: 'images/lucy-porter.png', desc: "Lucy Porter", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 147, img: 'images/luisa-omielan.png', desc: "Luisa Omielan", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 148, img: 'images/maisie-adam.png', desc: "Maisie Adam", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 149, img: 'images/marc-wootton.png', desc: "Marc Wootton", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 150, img: 'images/marcus-brigstocke.png', desc: "Marcus Brigstocke", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 151, img: 'images/marjolein-robertson.png', desc: "Marjolein Robertson", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 152, img: 'images/mark-gatiss.png', desc: "Mark Gatiss", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'queer', race: 'white' },
+{ id: 153, img: 'images/mark-heap.png', desc: "Mark Heap", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 154, img: 'images/mark-silcox.png', desc: "Mark Silcox", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 155, img: 'images/mark-simmons.png', desc: "Mark Simmons", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 156, img: 'images/mark-steel.png', desc: "Mark Steel", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 157, img: 'images/mark-williams.png', desc: "Mark Williams", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 158, img: 'images/martha-howe-douglas.png', desc: "Martha Howe-Douglas", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 159, img: 'images/mat-ewins.png', desc: "Mat Ewins", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 160, img: 'images/mathew-baynton.png', desc: "Mathew Baynton", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 161, img: 'images/matt-berry.png', desc: "Matt Berry", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 162, img: 'images/matt-forde.png', desc: "Matt Forde", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 163, img: 'images/matthew-crosby.png', desc: "Matthew Crosby", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 164, img: 'images/matthew-holness.png', desc: "Matthew Holness", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 165, img: 'images/meera-syal.png', desc: "Meera Syal", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 166, img: 'images/michael-spicer.png', desc: "Michael Spicer", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 167, img: 'images/miles-jupp.png', desc: "Miles Jupp", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 168, img: 'images/milton-jones.png', desc: "Milton Jones", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 169, img: 'images/mo-gilligan.png', desc: "Mo Gilligan", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 170, img: 'images/nabil-abdulrashid.png', desc: "Nabil Abdulrashid", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 171, img: 'images/natasia-demetriou.png', desc: "Natasia Demetriou", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 172, img: 'images/nathan-caton.png', desc: "Nathan Caton", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 173, img: 'images/neil-mullarkey.png', desc: "Neil Mullarkey", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 174, img: 'images/nick-frost.png', desc: "Nick Frost", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 175, img: 'images/nick-helm.png', desc: "Nick Helm", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 176, img: 'images/nigel-ng.png', desc: "Nigel Ng", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 177, img: 'images/nina-conti.png', desc: "Nina Conti", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 178, img: 'images/nina-wadia.png', desc: "Nina Wadia", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 179, img: 'images/ninia-benjamin.png', desc: "Ninia Benjamin", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 180, img: 'images/olga-koch.png', desc: "Olga Koch", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
+{ id: 181, img: 'images/olivia-lee.png', desc: "Olivia Lee", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 182, img: 'images/omid-djalili.png', desc: "Omid Djalili", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 183, img: 'images/paul-foot.png', desc: "Paul Foot", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'queer', race: 'white' },
+{ id: 184, img: 'images/paul-whitehouse.png', desc: "Paul Whitehouse", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 185, img: 'images/peter-serafinowicz.png', desc: "Peter Serafinowicz", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 186, img: 'images/phil-cornwell.png', desc: "Phil Cornwell", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 187, img: 'images/phil-kay.png', desc: "Phil Kay", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 188, img: 'images/pierre-novellie.png', desc: "Pierre Novellie", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 189, img: 'images/pippa-evans.png', desc: "Pippa Evans", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 190, img: 'images/rachel-fairburn.png', desc: "Rachel Fairburn", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 191, img: 'images/rachel-parris.png', desc: "Rachel Parris", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 192, img: 'images/ray-badran.png', desc: "Ray Badran", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 193, img: 'images/rebecca-front.png', desc: "Rebecca Front", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 194, img: 'images/reece-shearsmith.png', desc: "Reece Shearsmith", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 195, img: 'images/reginald-d.-hunter.png', desc: "Reginald D. Hunter", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 196, img: 'images/rhys-james.png', desc: "Rhys James", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 197, img: 'images/rhys-thomas.png', desc: "Rhys Thomas", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 198, img: 'images/ria-lina.png', desc: "Ria Lina", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 199, img: 'images/rich-hall.png', desc: "Rich Hall", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 200, img: 'images/richard-ayoade.png', desc: "Richard Ayoade", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 201, img: 'images/rob-brydon.png', desc: "Rob Brydon", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 202, img: 'images/rob-carter.png', desc: "Rob Carter", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 203, img: 'images/rob-delaney.png', desc: "Rob Delaney", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 204, img: 'images/rob-newman.png', desc: "Rob Newman", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 205, img: 'images/robin-ince.png', desc: "Robin Ince", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 206, img: 'images/ross-noble.png', desc: "Ross Noble", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 207, img: 'images/russell-kane.png', desc: "Russell Kane", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 208, img: 'images/sam-simmons.png', desc: "Sam Simmons", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 209, img: 'images/sandi-toksvig.png', desc: "Sandi Toksvig", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
+{ id: 210, img: 'images/sanjeev-bhaskar.png', desc: "Sanjeev Bhaskar", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 211, img: 'images/sara-barron.png', desc: "Sara Barron", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 212, img: 'images/sarah-keyworth.png', desc: "Sarah Keyworth", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
+{ id: 213, img: 'images/shappi-khorsandi.png', desc: "Shappi Khorsandi", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'bame' },
+{ id: 214, img: 'images/sharon-horgan.png', desc: "Sharon Horgan", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 215, img: 'images/sharon-wanjohi.png', desc: "Sharon Wanjohi", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 216, img: 'images/simon-amstell.png', desc: "Simon Amstell", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'queer', race: 'white' },
+{ id: 217, img: 'images/simon-day.png', desc: "Simon Day", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 218, img: 'images/simon-evans.png', desc: "Simon Evans", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 219, img: 'images/simon-farnaby.png', desc: "Simon Farnaby", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 220, img: 'images/simon-pegg.png', desc: "Simon Pegg", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 221, img: 'images/sindhu-vee.png', desc: "Sindhu Vee", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 222, img: 'images/spencer-jones.png', desc: "Spencer Jones", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 223, img: 'images/stephen-bailey.png', desc: "Stephen Bailey", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'queer', race: 'white' },
+{ id: 224, img: 'images/stephen-k.-amos.png', desc: "Stephen K. Amos", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'queer', race: 'bame' },
+{ id: 225, img: 'images/stephen-mangan.png', desc: "Stephen Mangan", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 226, img: 'images/stephen-merchant.png', desc: "Stephen Merchant", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 227, img: 'images/stuart-goldsmith.png', desc: "Stuart Goldsmith", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 228, img: 'images/sunil-patel.png', desc: "Sunil Patel", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 229, img: 'images/susan-calman.png', desc: "Susan Calman", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
+{ id: 230, img: 'images/suzi-ruffell.png', desc: "Suzi Ruffell", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
+{ id: 231, img: 'images/tamsin-grieg.png', desc: "Tamsin Grieg", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 232, img: 'images/tessa-coates.png', desc: "Tessa Coates", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 233, img: 'images/thanyia-moore.png', desc: "Thanyia Moore", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
+{ id: 234, img: 'images/tiff-stevenson.png', desc: "Tiff Stevenson", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 235, img: 'images/tom-allen.png', desc: "Tom Allen", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'queer', race: 'white' },
+{ id: 236, img: 'images/tom-bell.png', desc: "Tom Bell", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 237, img: 'images/tom-davis.png', desc: "Tom Davis", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 238, img: 'images/tom-rosenthal.png', desc: "Tom Rosenthal", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 239, img: 'images/tom-stade.png', desc: "Tom Stade", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 240, img: 'images/tom-walker.png', desc: "Tom Walker", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 241, img: 'images/tom-ward.png', desc: "Tom Ward", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 242, img: 'images/tom-wrigglesworth.png', desc: "Tom Wrigglesworth", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 243, img: 'images/tommy-tiernan.png', desc: "Tommy Tiernan", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 244, img: 'images/tony-law.png', desc: "Tony Law", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 245, img: 'images/toussaint-douglass.png', desc: "Toussaint Douglass", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'bame' },
+{ id: 246, img: 'images/tracy-ann-oberman.png', desc: "Tracy-Ann Oberman", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 247, img: 'images/will-duggan.png', desc: "Will Duggan", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
+{ id: 248, img: 'images/zoe-lyons.png', desc: "Zoe Lyons", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
+    // Add more items here with their respective properties
 ];
 
 let currentPair = [];
 
-// Function to get a new random item that is not dismissed and not in the current pair
-function getNewItem(excludeItemId) {
-    let availableItems = items.filter(item => !item.dismissed && item.id !== excludeItemId);
-
-    // First, try to find an item that has not been voted on
-    let prioritizedItems = availableItems.filter(item => !item.voted);
-    
-    // If no such item is found, fall back to any available item
-    if (prioritizedItems.length > 0) {
-        availableItems = prioritizedItems;
-    }
-
-    const randomIndex = Math.floor(Math.random() * availableItems.length);
-    return availableItems[randomIndex];
-}
-
-//Function to find out more about an item using Google search
-function findOutMore(itemNumber) {
-    const item = currentPair[itemNumber - 1];
-    const query = encodeURIComponent(`${item.desc} comedian`);
-    const url = `https://www.google.com/search?q=${query}`;
-    window.open(url, '_blank');
-}
-
-// Function to display items, with optional replacement of a specific item
 function displayItems(replaceItemIndex = null) {
     if (replaceItemIndex !== null) {
         const itemToKeep = currentPair[1 - replaceItemIndex];
@@ -176,6 +276,21 @@ function displayItems(replaceItemIndex = null) {
     document.getElementById('desc2').textContent = currentPair[1].desc;
 }
 
+function getNewItem(excludeItemId) {
+    let availableItems = items.filter(item => !item.dismissed && item.id !== excludeItemId);
+
+    // First, try to find an item that has not been voted on
+    let prioritizedItems = availableItems.filter(item => !item.voted);
+    
+    // If no such item is found, fall back to any available item
+    if (prioritizedItems.length > 0) {
+        availableItems = prioritizedItems;
+    }
+
+    const randomIndex = Math.floor(Math.random() * availableItems.length);
+    return availableItems[randomIndex];
+}
+
 function getRandomPair() {
     let availableItems = items.filter(item => !item.dismissed);
 
@@ -194,14 +309,20 @@ function getRandomPair() {
 function vote(itemNumber) {
     currentPair[itemNumber - 1].votes++;
     currentPair[itemNumber - 1].voted = true;
-    currentPair[1 - itemNumber].voted = true; // Mark the other item as voted as well
-    displayItems();
+    displayItems(itemNumber - 1);
     displayRankings();
 }
 
 function dismiss(itemNumber) {
     currentPair[itemNumber - 1].dismissed = true;
     displayItems(itemNumber - 1);
+}
+
+function findOutMore(itemNumber) {
+    const item = currentPair[itemNumber - 1];
+    const query = encodeURIComponent(`${item.desc} information`);
+    const url = `https://www.google.com/search?q=${query}`;
+    window.open(url, '_blank');
 }
 
 function displayRankings() {
@@ -222,7 +343,7 @@ function displayRankings() {
         }
     }
 
-    // Add at least 1 soft item
+    // Add at least 1 queer person
     for (let i = 0; i < queerItems.length && selectedItems.length < 3; i++) {
         if (!addedItems.has(queerItems[i].id)) {
             selectedItems.push(queerItems[i]);
@@ -230,7 +351,7 @@ function displayRankings() {
         }
     }
 
-    // Add at least 1 square item
+    // Add at least 1 BAME person
     for (let i = 0; i < bameItems.length && selectedItems.length < 4; i++) {
         if (!addedItems.has(bameItems[i].id)) {
             selectedItems.push(bameItems[i]);
@@ -250,7 +371,7 @@ function displayRankings() {
     selectedItems.sort((a, b) => a.desc.localeCompare(b.desc));
 
     // Generate HTML for the selected items
-    let rankingsHTML = '<h2>Your (diversified) top 5</h2><div class="top-items">';
+    let rankingsHTML = '<h2>Top 5 Items</h2><div class="top-items">';
     selectedItems.forEach(item => {
         rankingsHTML += `
             <div class="top-item">
