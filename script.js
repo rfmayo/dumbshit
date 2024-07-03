@@ -129,7 +129,6 @@ let currentPair = [];
 
 // Function to get a new random item that is not dismissed and not in the current pair
 function getNewItem(excludeItemId) {
-    // Filter out dismissed items and the item to exclude
     let availableItems = items.filter(item => !item.dismissed && item.id !== excludeItemId);
 
     // First, try to find an item that has not been voted on
@@ -206,11 +205,53 @@ function dismiss(itemNumber) {
 }
 
 function displayRankings() {
-    const sortedItems = [...items].sort((a, b) => b.votes - a.votes).slice(0, 5);
-    sortedItems.sort((a, b) => a.desc.localeCompare(b.desc));
+    // Create arrays for each characteristic
+    const nonmaleItems = items.filter(item => item.gender === 'non-male' && !item.dismissed).sort((a, b) => b.votes - a.votes);
+    const queerItems = items.filter(item => item.sexuality === 'queer' && !item.dismissed).sort((a, b) => b.votes - a.votes);
+    const bameItems = items.filter(item => item.race === 'bame' && !item.dismissed).sort((a, b) => b.votes - a.votes);
+    const otherItems = items.filter(item => !item.dismissed).sort((a, b) => b.votes - a.votes);
 
-    let rankingsHTML = '<h2>Top 5 Items</h2><div class="top-items">';
-    sortedItems.forEach(item => {
+    let selectedItems = [];
+    let addedItems = new Set();
+
+    // Add at least 2 women
+    for (let i = 0; i < nonmaleItems.length && selectedItems.length < 2; i++) {
+        if (!addedItems.has(nonmaleItems[i].id)) {
+            selectedItems.push(nonmaleItems[i]);
+            addedItems.add(nonmaleItems[i].id);
+        }
+    }
+
+    // Add at least 1 soft item
+    for (let i = 0; i < queerItems.length && selectedItems.length < 3; i++) {
+        if (!addedItems.has(queerItems[i].id)) {
+            selectedItems.push(queerItems[i]);
+            addedItems.add(queerItems[i].id);
+        }
+    }
+
+    // Add at least 1 square item
+    for (let i = 0; i < bameItems.length && selectedItems.length < 4; i++) {
+        if (!addedItems.has(bameItems[i].id)) {
+            selectedItems.push(bameItems[i]);
+            addedItems.add(bameItems[i].id);
+        }
+    }
+
+    // Fill the remaining slots with the most popular items
+    for (let i = 0; i < otherItems.length && selectedItems.length < 5; i++) {
+        if (!addedItems.has(otherItems[i].id)) {
+            selectedItems.push(otherItems[i]);
+            addedItems.add(otherItems[i].id);
+        }
+    }
+
+    // Sort the selected items alphabetically by description
+    selectedItems.sort((a, b) => a.desc.localeCompare(b.desc));
+
+    // Generate HTML for the selected items
+    let rankingsHTML = '<h2>Your (diversified) top 5</h2><div class="top-items">';
+    selectedItems.forEach(item => {
         rankingsHTML += `
             <div class="top-item">
                 <img src="${item.img}" alt="${item.desc}">
