@@ -279,10 +279,8 @@ function displayItems(replaceItemIndex = null) {
 function getNewItem(excludeItemId) {
     let availableItems = items.filter(item => !item.dismissed && item.id !== excludeItemId);
 
-    // First, try to find an item that has not been voted on
     let prioritizedItems = availableItems.filter(item => !item.voted);
     
-    // If no such item is found, fall back to any available item
     if (prioritizedItems.length > 0) {
         availableItems = prioritizedItems;
     }
@@ -294,10 +292,8 @@ function getNewItem(excludeItemId) {
 function getRandomPair() {
     let availableItems = items.filter(item => !item.dismissed);
 
-    // First, try to find a pair of items that have not been voted on
     let prioritizedItems = availableItems.filter(item => !item.voted);
     
-    // If fewer than 2 items are found, fall back to any available items
     if (prioritizedItems.length >= 2) {
         availableItems = prioritizedItems;
     }
@@ -309,7 +305,7 @@ function getRandomPair() {
 function vote(itemNumber) {
     currentPair[itemNumber - 1].votes++;
     currentPair[itemNumber - 1].voted = true;
-    displayItems(itemNumber - 1);
+    displayItems(itemNumber - 1); // Call displayItems with the index of the voted item
     displayRankings();
 }
 
@@ -368,9 +364,8 @@ function displayRankings() {
     }
 
     // Sort the selected items alphabetically by description
-    selectedItems.sort((a, b) => a.desc.localeCompare(b.desc));
+   selectedItems.sort((a, b) => a.desc.localeCompare(b.desc));
 
-    // Generate HTML for the selected items
     let rankingsHTML = '<h2>Top 5 Items</h2><div class="top-items">';
     selectedItems.forEach(item => {
         rankingsHTML += `
