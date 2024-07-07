@@ -198,13 +198,13 @@ function getRandomPair() {
 function vote(itemNumber) {
     currentPair[itemNumber - 1].votes++;
     currentPair[itemNumber - 1].voted = true;
-    displayItems(itemNumber - 1); // Call displayItems with the index of the voted item
+    displayItems(); // Call displayItems to refresh both items
     displayRankings();
 }
 
 function dismiss(itemNumber) {
     currentPair[itemNumber - 1].dismissed = true;
-    displayItems(itemNumber - 1);
+    displayItems(itemNumber - 1); // Call displayItems with the index of the dismissed item
 }
 
 function findOutMore(itemNumber) {
