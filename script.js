@@ -133,7 +133,7 @@ const items = [
 { id: 132, img: 'images/stephen-merchant.png', desc: "Stephen Merchant", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
 { id: 133, img: 'images/susan-calman.png', desc: "Susan Calman", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
 { id: 134, img: 'images/suzi-ruffell.png', desc: "Suzi Ruffell", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'queer', race: 'white' },
-{ id: 135, img: 'images/tamsin-grieg.png', desc: "Tamsin Grieg", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
+{ id: 135, img: 'images/tamsin-greig.png', desc: "Tamsin Greig", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'white' },
 { id: 136, img: 'images/thanyia-moore.png', desc: "Thanyia Moore", votes: 0, dismissed: false, voted: false, gender: 'non-male', sexuality: 'straight', race: 'bame' },
 { id: 137, img: 'images/tom-allen.png', desc: "Tom Allen", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'queer', race: 'white' },
 { id: 138, img: 'images/tommy-tiernan.png', desc: "Tommy Tiernan", votes: 0, dismissed: false, voted: false, gender: 'male', sexuality: 'straight', race: 'white' },
